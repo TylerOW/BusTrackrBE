@@ -4,7 +4,7 @@
   "description": " Bus Tracking Project Backend",
   "main": "src/server.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon -r dotenv/config src/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon -r dotenv/config src/server.js",
     "start": "node src/server.js"
   },
   "author": "Deepak Chaurasiya",
@@ -19,6 +19,8 @@
     "socket.io": "^4.6.1"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "nodemon": "^3.1.10"
   }
 }
